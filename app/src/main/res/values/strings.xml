@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kuliner Lokal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kategori">Kategori</string>
+    <string name="title_activity_tempat">tempat</string>
+    <string name="title_activity_tempat_detail">TempatDetail</string>
+<string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

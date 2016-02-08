@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/venue_detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inyong"
+                    android:adjustViewBounds="true"
+                    android:background="@color/cardview_light_background"
+                    android:backgroundTint="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:background="#AA000000"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/venue_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Warung Inyong"
+                        android:textColor="@color/icons"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|top"
+                        android:rating="4"
+
+                        android:stepSize="0.5"
+                        android:focusable="true" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/venue_detail_card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+
+                            android:text="Pogung Dalangan, Jl. Selokan Mataram, Mlati, Sleman, Daerah Istimewa Yogyakarta 55284" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/road" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_jarak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+
+                            android:text="Jarak : 2.9 KM" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/phone" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_telepon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0813-2828-6434" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+
+                <android.support.v7.widget.CardView
+
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    card_view:cardBackgroundColor="#C8E6C9">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/venue_detail_img_user"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/jessica" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/venue_detail_img_user"
+                            android:paddingLeft="10dp"
+                            android:text="Jessica Veranda (@veJKT48)"
+                            android:textColor="@color/primary_text" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_usertips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/venue_detail_user_name"
+                            android:layout_toRightOf="@+id/venue_detail_img_user"
+                            android:paddingLeft="10dp"
+                            android:text="'Habis dinner di sini..enak..'"
+                            android:textColor="@color/secondary_text"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    card_view:cardBackgroundColor="#C8E6C9">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/venue_detail_img_user2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_user_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/venue_detail_img_user2"
+                            android:paddingLeft="10dp"
+                            android:text="azisamirul"
+                            android:textColor="@color/primary_text" />
+
+                        <TextView
+                            android:id="@+id/venue_detail_usertips2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/venue_detail_user_name2"
+                            android:layout_toRightOf="@+id/venue_detail_img_user2"
+                            android:paddingLeft="10dp"
+                            android:text="'Enak vrooh milkshake sama mendoannya...'"
+                            android:textColor="@color/secondary_text"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:paddingBottom="@dimen/activity_vertical_margin"--><!--android:paddingLeft="@dimen/activity_horizontal_margin"--><!--android:paddingRight="@dimen/activity_horizontal_margin"--><!--android:paddingTop="@dimen/activity_vertical_margin"--><!--tools:context="azisamirul.kulinerlokal.act.TempatDetail">-->
+
+
+    <!--<ScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<android.support.v7.widget.RecyclerView--><!--android:id="@+id/recycler_tempatdetail"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.RecyclerView>--><!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+
+    <!--</RelativeLayout>-->

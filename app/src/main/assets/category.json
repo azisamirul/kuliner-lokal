@@ -1,0 +1,49 @@
+{
+"categories" :[
+{
+"id_categories" : 1,
+"categories_name" : "BAKSO",
+  "pics" : "bakso.jpg"
+},
+{
+"id_categories" : 2,
+"categories_name" : "MIE",
+  "pics" : "mie.png"
+},
+{
+"id_categories" : 3,
+"categories_name" : "PECEL",
+  "pics" : "pecel.jpg"
+},
+{
+"id_categories" : 4,
+"categories_name" : "SATE",
+  "pics" : "sate.png"
+},
+{
+"id_categories" : 5,
+"categories_name": "GADO-GADO",
+  "pics" : "gadogado.png"
+},
+{
+"id_categories" : 6,
+"categories_name": "NASI GORENG",
+  "pics" : "nasgor.png"
+},
+{
+"id_categories" : 7,
+"categories_name": "MASAKAN PADANG",
+  "pics" : "rendang.png"
+},
+{
+"id_categories" : 8,
+"categories_name" : "SOTO",
+  "pics" : "soto.jpg"
+},
+{
+"id_categories" : 9,
+"categories_name" : "AYAM GORENG",
+  "pics" : "ayam.jpg"
+}
+]
+}
